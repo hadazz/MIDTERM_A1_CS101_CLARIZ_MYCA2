@@ -1,0 +1,112 @@
+body, html {
+  background-color: #1a0033; /* Dark purple background */
+  color: white;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Login container styles */
+.login-container {
+  background-color: #2d0a42; /* Darker purple for container */
+  color: #f8bfff; /* Light pink text */
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 400px;
+  margin: 5rem auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  font-family: 'Arial', sans-serif;
+}
+
+.login-container h2 {
+  color: #ff80bf; /* Brighter pink for headings */
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+/* Form styling */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #d580ff; /* Light purple for labels */
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: 2px solid #4d0066; /* Medium-dark purple for borders */
+  background-color: #3a0052; /* Slightly lighter purple for input background */
+  color: #ffb3ff; /* Light pink for input text */
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #ff33cc; /* Bright pink for focus state */
+  box-shadow: 0 0 0 2px rgba(255, 51, 204, 0.3);
+}
+
+.form-group input::placeholder {
+  color: #b366cc; /* Muted purple for placeholder text */
+}
+
+/* Error message */
+.error-message {
+  color: #ff99cc; /* Pink error text */
+  background-color: rgba(255, 102, 204, 0.2);
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+  border: 1px solid rgba(255, 102, 204, 0.5);
+}
+
+/* Button styling */
+.login-button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #cc00cc; /* Vibrant pink/purple for button */
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-button:hover:not(:disabled) {
+  background-color: #ff33cc; /* Brighter pink on hover */
+  transform: scale(1.02);
+}
+
+.login-button:disabled {
+  background-color: #996699; /* Muted purple when disabled */
+  cursor: not-allowed;
+}
+
+/* Optional animation for the form */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.login-container {
+  animation: fadeIn 0.5s ease-out;
+}
